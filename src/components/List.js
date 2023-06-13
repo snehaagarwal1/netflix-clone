@@ -6,7 +6,6 @@ const List = ({title,param}) => {
     useEffect(()=>{
        fetchData(param).then( res => setList(res.data.results))
     },[]);
-    console.log(list);
   return (
     <div className="list">
       <div className="row">
