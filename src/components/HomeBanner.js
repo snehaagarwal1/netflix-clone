@@ -13,7 +13,7 @@ const HomeBanner = () => {
             </div>
         </div>
         <div className='shadow'></div>
-        <img className='concord-img vlv-creative' src="https://ceotudent.com/wp-content/uploads/2020/05/netflix-poster.jpg"></img>
+        <img className='concord-img vlv-creative' src="https://ceotudent.com/wp-content/uploads/2020/05/netflix-poster.jpg" alt=" "></img>
     </div>
   )
 }

@@ -2,10 +2,13 @@ import { fetchData } from "../api/api";
 import React, { useEffect, useState } from "react";
 
 const List = ({title,param}) => {
+
     const[list,setList]=useState([]);
+
     useEffect(()=>{
        fetchData(param).then( res => setList(res.data.results))
     },[]);
+    
   return (
     <div className="list">
       <div className="row">

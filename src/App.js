@@ -10,7 +10,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 function App() {
   return (
     <React.Fragment>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
          <Routes>
           <Route path="/" element={
             <React.Fragment>
