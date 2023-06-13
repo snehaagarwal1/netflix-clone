@@ -41,6 +41,7 @@ function App() {
               <List title="Upcoming" param="upcoming"/>
             </React.Fragment>
           }/>
+          <Route exact path="/*" element={<h1>404</h1>}/>
           </Routes> 
       
     </React.Fragment>
