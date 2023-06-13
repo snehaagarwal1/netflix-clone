@@ -5,12 +5,11 @@ import HomeBanner from './components/HomeBanner';
 import Login from './components/Login';
 import Banner from './components/Banner';
 import List from './components/List';
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
     <React.Fragment>
-      <Router basename={process.env.PUBLIC_URL}>
          <Routes>
           <Route path="/" element={
             <React.Fragment>
@@ -43,7 +42,7 @@ function App() {
             </React.Fragment>
           }/>
           </Routes> 
-      </Router>
+      
     </React.Fragment>
   );
 }

@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate,useLocation } from 'react-router-dom'
+import {initializeApp}from 'firebase/app'
 import {getAuth,signInWithEmailAndPassword,createUserWithEmailAndPassword} from 'firebase/auth';
+import {firebaseConfig} from './firebaseConfig.js'
 
 
 const Login = () => {
      
-    
+    const app=initializeApp(firebaseConfig);
     const navigate=useNavigate();
     const location=useLocation();
     const page=location.pathname ==='/login' ? true :false;
